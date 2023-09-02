@@ -23,6 +23,33 @@
   transition: all 0.3s linear;
 }
 
+.to-top-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 20;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: #44434a;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #1d1d21;
+  }
+}
+
+.to-top-btn--show {
+  opacity: 1;
+}
+
 @media (max-width: 576px) {
   .buttons {
     flex-direction: column;
